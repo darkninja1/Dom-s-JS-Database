@@ -1,0 +1,54 @@
+body {
+  background-color:black;
+  color:purple;
+}
+.database {
+  display:box;
+  position:fixed;
+  top:50%;
+  right:50%;
+  font-size:30px;
+  border:solid 1px green;
+  background-color:black;
+  color:green;
+  padding-inline-start:30px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-inline-end:30px;
+  /*box-shadow: 0px 0px 30px 10px green;*/
+  box-shadow: 0px 0px 400px 30px blue;
+  z-index:100;
+  transition: 0.5s;
+}
+.database:hover {
+  border:solid 1px vlue;
+  background-color:green;
+  color:black;
+  cursor:pointer;
+  box-shadow: 0px 0px 400px 20px blue;
+  /*transform: rotateZ(360deg);*/
+  
+}
+.database:active {
+  transform: rotateZ(720deg);
+  background-image: -webkit-radial-gradient(rgb(0, 39, 0),green);
+  /*background-image: -webkit-radial-gradient(red,blue);*/
+}
+.div12{
+  opacity:0.2;
+  background-color:blue;
+  width:100px;
+  height:100px;
+  position:relative;
+  animation: mymove 20s infinite;animation-fill-mode:forwards;
+  /*y-transition: all 10s ease-in-out;*/
+}
+@keyframes mymove {
+  from{left:0px;top:0px;}
+  to{top:0px;background-color:blue;}
+  0%{left:0px;}
+  25%{top:500px;right:0px;background-color:green;transform: rotateX(180deg);}
+  50%{top:0px;left:90%;background-color:red;transform: rotateY(180deg);}
+  75%{left:0px;top:500px;background-color:purple;transform: rotateZ(180deg);}
+  100%{top:0px;left:0px;}
+}  
