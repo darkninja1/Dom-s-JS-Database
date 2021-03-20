@@ -11,21 +11,13 @@ function database() {
   if (person2 in data) {
     var myWindow = window.open("", "newWindow", "width=500,height=700");
     for (let [key, value] of Object.entries(data[person2])) {
-    //alert(key + ':' + " " + value);
     myWindow.document.body.style.backgroundColor = "black";
     myWindow.document.body.style.fontSize = "20px";
+        //myWindow.document.body.style.color = "blue";
     myWindow.document.body.style.color = "green";
-    myWindow.document.write(key + ':' + " " + value);
-    myWindow.document.write("\n");
+    myWindow.document.write(key + ':' + " " + "<div style='background-color:blue;width:auto;background-image:linear-gradient(to right, #00ff9d, #002896);background-size:50%;background-repeat: repeat;-webkit-background-clip: text;-webkit-text-fill-color:transparent;-moz-background-clip: text;-moz-text-fill-color: transparent;'>" + value + "</div>" + "<br><!--<hr style='color:green;background-color:green;border-color:green;'>-->");
     
   }}
-  /*
-  if (person2 Not in data) {
-    var yn = prompt('would you like to add this name?[y/n]?')
-    if yn == 'y' {
-      var addp = prompt('add person and info in ')
-    }
-  }*/
   else {
     alert("Invalid, or not in database");
   }
