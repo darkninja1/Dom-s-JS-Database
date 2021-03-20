@@ -1,8 +1,8 @@
 data = {};
 
-data['JOHN DOE'] = {'Name':'John Doe','Occupation':'blacksmith','Adress':'73 Bedford Lane Lawndale, CA 90260'};
+data['JOHN DOE'] = {'Name':'John Doe','Occupation':'blacksmith','Adress':'73 Bedford Lane Lawndale,<br> CA 90260'};
 
-data['JANE DOE'] = {'Name':'Jane Doe','Occupation':'none','Adress':'74 Bedford Lane Lawndale, CA 90260'};
+data['JANE DOE'] = {'Name':'Jane Doe','Occupation':'none','Adress':'74 Bedford Lane Lawndale,<br> CA 90260'};
 
 
 function database() {
